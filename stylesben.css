@@ -30,6 +30,13 @@ nav a {
   margin: 0 10px;
 }
 
+@media (max-width: 767px) {
+  nav a {
+      display: block;
+      margin: 10px 0; 
+  }
+}
+
 main {
   margin: 0;
   line-height: 1.6;
