@@ -22,6 +22,7 @@ nav {
 
 nav a {
   color: #3c6255;
+  font-size: 20px;
   text-decoration: none;
   margin: 0 10px;
 }
@@ -57,23 +58,28 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   font-size: 2rem;
   color: #3c6255;
+  text-align: center;
   margin-top: 30px;
 }
 
 p {
   font-size: 1.2rem;
+  text-align: center;
   color: #3c6255;
   margin-top: 20px;
 }
 
 ul {
   list-style: none;
+  text-align: center;
+  color:#3c6255;
   margin: 0;
   padding: 0;
 }
 
 li {
-  margin-top: 10px;
+  margin-top: 15px;
+  font-size: 20px;
 }
 
 a {
@@ -161,11 +167,12 @@ button:hover {
 }
 
 .cta {
-  background-color: #3c6255;
-  color: #f2f2f2;
+  background-color: #fffde2;
+  color: #3c6255;
   padding: 50px;
   text-align: center;
   margin-top: 50px;
+  position: relative;
 }
 
 .cta h2 {
@@ -178,22 +185,46 @@ button:hover {
   margin-top: 20px;
 }
 
-.cta button {
-  margin-top: 20px;
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 60px; /* Adjust the width of the border as needed */
+  height: 3px; /* Adjust the height of the border as needed */
+  background-color: #3c6255; /* Border color */
+  transform: translateX(-50%);
 }
 
-.join-button {
-  background-color: #3c6255;
-  color: #fffde2;
-  border: none;
+.cta button {
+  margin-top: 20px;
+  border: 2px solid #3c6255; /* Border color */
+  color: #3c6255;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
+.cta button:hover {
+  background-color: #3c6255;
+  color: #fffde2;
+}
+
+.join-button {
+  background-color: #fffde2;
+  color: #3c6255;
+  border: none;
+  padding: 12px 20px; /* Adjust padding to make the button smaller */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-size: 14px; /* Adjust font size to make the text smaller */
+}
+
 .join-button:hover {
-  background-color: #f2f2f2;
+  background-color: #fffde2;
   color: #3c6255;
 }
 
@@ -201,4 +232,37 @@ button:hover {
 .join-button a {
   color: inherit; /* Inherit the color from the button */
   text-decoration: none;
+}
+
+nav.bottom-nav {
+  background-color: #3c6255;
+  color: #fffde2;
+  padding: 10px; /* Adjust padding as needed */
+  text-align: center;
+}
+
+/* Styling for the links in the bottom navigation bar */
+nav.bottom-nav a {
+  color: #fffde2;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+/* Hover effect for the links in the bottom navigation bar */
+nav.bottom-nav a:hover {
+  color: #f2f2f2;
+}
+
+.instagram-link {
+  color: #fffde2;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 10px;
+}
+
+.instagram-link:hover {
+  color: #f2f2f2;
 }
