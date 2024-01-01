@@ -387,31 +387,32 @@ nav.bottom-nav a:hover {
   color: #3c6255;
 }
 
-/* Tablets and larger screens */
+.contact_picture_block,
+.contact_picture_block_duo {
+  width: 100%; /* Take full width on small screens */
+  max-width: 100%; /* Ensure it doesn't exceed screen width */
+  margin: 0; /* Remove any margins */
+}
+
 @media only screen and (min-width: 768px) {
-  .features {
-    flex-wrap: wrap;
-  }
-
-  .feature {
-    width: 45%; /* Two features per row */
-    margin-bottom: 2%;
-  }
-
   .contact_picture_block,
   .contact_picture_block_duo {
-    width: 30%;
-    margin-bottom: 2%;
+    max-width: 25%; /* Adjust as needed for larger screens */
+    margin: 0 1%; /* Add some spacing between blocks on larger screens */
   }
 }
 
-/* Desktop screens */
-@media only screen and (min-width: 992px) {
-  .feature,
-  .contact_picture_block,
-  .contact_picture_block_duo {
-    width: 30%; /* Adjust as needed */
-    margin-right: 2.5%;
-    margin-left: 2.5%;
-  }
+.contact_picture_block h2,
+.contact_picture_block p,
+.contact_picture_block_duo h2,
+.contact_picture_block_duo p {
+  text-align: center;
+}
+
+.contact_picture_block img,
+.contact_picture_block_duo img {
+  display: block;
+  width: 100%; /* Make images responsive */
+  height: auto;
+  margin: 0 auto; /* Center the image within its container */
 }
