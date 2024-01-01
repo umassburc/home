@@ -390,7 +390,7 @@ nav.bottom-nav a:hover {
 .contact_picture_block,
 .contact_picture_block_duo {
   width: 100%; /* Take full width on small screens */
-  max-width: 100%; /* Ensure it doesn't exceed screen width */
+  max-width: 33%; /* Ensure it doesn't exceed screen width */
   margin: 0; /* Remove any margins */
 }
 
