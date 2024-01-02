@@ -445,4 +445,25 @@ nav.bottom-nav a:hover {
     margin: 0 1%; /* Add some spacing between blocks on larger screens */
   }
 }
+.rsvp-button {
+  background-color: #fffde2;
+  color: #3c6255;
+  border: none;
+  padding: 15px 30px; /* Adjust padding to make the button smaller */
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-size: 18px; /* Adjust font size to make the text smaller */
+}
 
+.rsvp-button:hover {
+  background-color: #3c6255;
+  color: #fffde2;
+}
+
+/* Additional styling for the anchor tag inside the button */
+.rsvp-button a {
+  color: inherit; /* Inherit the color from the button */
+  text-decoration: none;
+}
