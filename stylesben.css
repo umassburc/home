@@ -568,33 +568,3 @@ nav.bottom-nav a:hover {
   margin-left: auto;
   margin-right: auto;
 }
-
-@media only screen and (max-width: 414px) {
-  .pastmeetingfeature{
-    flex-direction: column;
-    max-width: 100%;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  .pastmeetingfeature iframe {
-    width: 183px;
-    height: 103px;
-    margin-left: auto;
-    margin-right: auto;
-    
-  }
-  .pastmeetingfeature p {
-    font-size: 0.125rem;
-    color: #3c6255;
-    margin-top: 5px;
-    text-align: left;
-  }
-  .pastmeetingfeature h2 {
-    font-size: 0.25rem;
-    color: #3c6255;
-    margin-top: 5px;
-    text-align: left;
-  }
-
-}
-
