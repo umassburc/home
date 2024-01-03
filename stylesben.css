@@ -22,6 +22,8 @@ header {
   left: 0;
   margin: 0 10px;
 }
+
+
 nav {
   background-color: #fffde2;
   color: #3c6255;
@@ -148,13 +150,13 @@ button:hover {
 
 .hero h1 {
   color: #fffde2;
-  font-size: 4rem;
+  font-size: 3rem;
   text-shadow: 2px 2px #3c6255;
 }
 
 .hero p {
   color: #fffde2;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-top: 20px;
   text-shadow: 2px 2px #3c6255;
 }
@@ -578,4 +580,52 @@ nav.bottom-nav a:hover {
   margin-right: auto;
 
 }
-   
+
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  height: auto;
+  margin: 0;
+  left: 0;
+  animation: 16s slider infinite;
+}
+
+#slider figure img {
+  float: left;
+  width: 20%;
+}
+
+@keyframes slider{
+  0%{
+    left: 0;
+  }
+  20%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  95%{
+    left: -300%;
+  }
+  100%{
+    left: -400%;
+  }
+}
+
